@@ -1,0 +1,68 @@
+.row {
+    height: 100px;
+}
+
+[class*="col-"] {
+    background-color: pink;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 100px;
+}
+
+.row .row {
+    padding: 5px;
+    height: 100%;
+    background-color: pink;
+    /* border: 1px solid black; */
+    line-height: 90px;
+}
+
+
+.row .row [class*="col-"] {
+    border: 1px solid pink;
+    background-color: hotpink;
+}
+/* PER INSERIMENTO TESTO IN COLONNE, MA NON FUNZIONA
+ PERCHE' SOVRASCRIVE SOLO L'ULTIMA CLASSE CHE TROVA
+
+
+[class*="col-"]:not(.no-testo)::before {
+    content: 'col ';
+}
+
+[class$="-1"]:not(.no-testo)::after {
+    content: '01';
+}
+[class$="-2"]:not(.no-testo)::after {
+    content: '02';
+}
+[class$="-3"]:not(.no-testo)::after {
+    content: '03';
+}
+[class$="-4"]:not(.no-testo)::after {
+    content: '04';
+}
+[class$="-5"]:not(.no-testo)::after {
+    content: '05';
+}
+[class$="-6"]:not(.no-testo)::after {
+    content: '06';
+}
+[class$="-7"]:not(.no-testo)::after {
+    content: '07';
+}
+[class$="-8"]:not(.no-testo)::after {
+    content: '08';
+}
+[class$="-9"]:not(.no-testo)::after {
+    content: '09';
+}
+[class$="10"]:not(.no-testo)::after {
+    content: '10';
+}
+[class$="11"]:not(.no-testo)::after {
+    content: '11';
+}
+[class$="12"]:not(.no-testo)::after {
+    content: '12';
+} */
